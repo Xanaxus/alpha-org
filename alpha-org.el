@@ -37,6 +37,7 @@
 (require 'subr-x)
 
 (use-package general
+  :after alpha-org
   :config
   (general-create-definer alpha-org/leader-keys
     :keymaps '(normal insert visual emacs)
