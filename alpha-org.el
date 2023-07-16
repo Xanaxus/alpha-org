@@ -38,9 +38,10 @@
 
 (use-package general
   :config
-  (global-unset-key (kbd "M-SPC"))
-  (general-create-definer alpha-org/general-def
-    :prefix "M-SPC"))
+  (general-create-definer alpha-org/leader-keys
+    :keymaps '(normal insert visual emacs)
+    :prefix "SPC"
+    :global-prefix "C-SPC"))
 
 ;;;; Configuration
 
